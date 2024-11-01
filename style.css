@@ -1,0 +1,64 @@
+/* Ensure the container is positioned relative */
+.rcf7-voice-input-container {
+    position: relative;
+}
+
+/* Style for the microphone button */
+.rcf7-mic-button {
+    background-color: transparent; /* Transparent background by default */
+    border: none;
+    color: #333; /* Default icon color */
+    padding: 0 10px; /* Horizontal padding */
+    margin: 0; /* No margin */
+    font-size: 20px; /* Default icon size - adjust if needed for Dashicons */
+    cursor: pointer;
+    position: absolute; /* Position inside container */
+    right: 10px; /* Position from the right edge */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    height: 100%; /* Match the height of the input field */
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center icon vertically */
+    justify-content: center; /* Center icon horizontally */
+    z-index: 1; /* Ensure button is above other elements */
+    transition: all 0.3s ease; /* Smooth transition for effects */
+}
+
+/* Style specific for textarea fields */
+textarea.rcf7-voice-input {
+    position: relative; /* Ensure the textarea is positioned relative */
+    padding-right: 50px; /* Ensure padding for button space */
+}
+
+/* Style for the microphone button in textarea */
+textarea.rcf7-voice-input + .rcf7-mic-button {
+    top: 5%; /* Adjust the position higher above the textarea */
+    right: 10px; /* Position from the right edge */
+    font-size: 20px; /* Slightly smaller icon size for textarea - adjust if needed */
+    margin-bottom: 0; /* Remove bottom margin */
+}
+
+/* Active state (when clicked) */
+.rcf7-mic-button:active {
+    background-color: #4CAF50; /* Green background when clicked */
+    color: #fff; /* White icon color when active */
+    border-radius: 0; /* Remove rounded border */
+}
+
+/* Hover state */
+.rcf7-mic-button:hover {
+    background-color: transparent; /* No background on hover */
+    color: #4CAF50; /* Change icon color on hover */
+    font-size: 22px; /* Slightly larger icon on hover */
+}
+
+/* Hide the microphone button when it's disabled */
+.rcf7-mic-button:disabled, .rcf7-mic-button.disabled {
+    display: none; /* Completely hide the button */
+}
+
+
+/* Remove rounded border */
+.rcf7-mic-button {
+    border-radius: 0; /* Remove round border */
+}

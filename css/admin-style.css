@@ -1,0 +1,324 @@
+		
+	/* Email form container */
+    #email_subscribe_form {
+        background-color: #f9f9f9;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
+    }
+
+    #email_subscribe_form h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    .mc-field-group {
+        margin-bottom: 15px;
+    }
+
+    .mc-field-group label {
+        font-size: 14px;
+        display: block;
+        margin-bottom: 5px;
+        color: #555;
+    }
+
+    .mc-field-group input {
+        width: 80%;
+        padding: 10px;
+        font-size: 14px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .button {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #45a049;
+    }
+
+    #mce-responses .response {
+        margin-top: 10px;
+        font-size: 14px;
+    }
+	 
+          /* Container for the settings page */
+        .wrap {
+            background: #f9f9f9;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* Title styling */
+        .rcf7-settings-title {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        /* Form styling */
+        .rcf7-settings-form {
+            max-width: 600px;
+        }
+
+        /* Row styling */
+        .rcf7-settings-row {
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        /* Label styling */
+        .rcf7-settings-label {
+            width: 200px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        /* Input styling */
+        .rcf7-settings-input {
+            flex: 1;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        /* Footer Section */
+        .rcf7-developer-footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+        }
+
+        /* Social icons */
+        .rcf7-footer-left a {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #0073aa;
+            text-decoration: none;
+        }
+
+        .rcf7-footer-left a:hover {
+            color: #00a0d2;
+        }
+
+        /* Developer logo */
+        .rcf7-footer-right {
+            text-align: right;
+        }
+
+        .rcf7-footer-logo {
+    width: 80px;
+    height: 70px;
+    object-fit: contain; /* Ensures the logo retains its aspect ratio */
+	}
+	
+	 .rcf7-ads-logo {
+    width: 250px;
+    height: auto;
+    object-fit: contain; /* Ensures the logo retains its aspect ratio */
+	}
+	
+  /* Floating button styling */
+    .upgrade-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 20px;
+        background-color: #ff5722;
+        color: #fff;
+        border: none;
+        padding: 15px 30px;
+        border-radius: 50px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        cursor: pointer;
+        z-index: 9999;
+        font-size: 16px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .upgrade-btn:hover {
+        background-color: #e64a19;
+        transform: scale(1.05); /* Button enlarges slightly on hover */
+    }
+
+    /* Hidden section for paid features */
+    .paid-features-section {
+        display: none; /* Hidden initially */
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+        width: 50%; /* 50% of the page */
+        height: 70%; /* 70% of the page height */
+        padding: 30px;
+        z-index: 9999;
+        border-radius: 12px;
+        overflow-y: auto;
+        animation: slideIn 0.5s ease-in-out;
+    }
+
+    /* Slide-in animation for popup */
+    @keyframes slideIn {
+        from {
+            opacity: 0;
+            transform: translate(-50%, -60%); /* Slide in from top */
+        }
+        to {
+            opacity: 1;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .paid-features-section h2,
+    .paid-features-section h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    /* Close button styling */
+    .close-btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background-color: #f44336;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 20px;
+        transition: background-color 0.3s ease;
+    }
+
+    .close-btn:hover {
+        background-color: #d32f2f;
+    }
+
+    /* Section styling */
+    .section {
+        margin-bottom: 30px;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .section:hover {
+        transform: translateY(-5px); /* Slight lift effect on hover */
+    }
+
+    .section h2, .section h3 {
+        display: flex;
+        align-items: center;
+    }
+
+    /* Icons */
+    .section h2::before,
+    .section h3::before {
+        content: '\1F4B8'; /* Unicode for a money bag icon */
+        font-size: 24px;
+        margin-right: 10px;
+        color: #ff5722;
+    }
+
+    .section ul {
+        padding-left: 20px;
+    }
+
+    .section ul li {
+        margin-bottom: 10px;
+        position: relative;
+        padding-left: 25px;
+    }
+
+    .section ul li::before {
+        content: '\2713'; /* Unicode checkmark */
+        position: absolute;
+        left: 0;
+        color: #4caf50;
+        font-weight: bold;
+    }
+
+    /* Styling for YouTube and Buy buttons */
+    .cta-btn {
+        display: inline-block;
+        margin-top: 20px;
+        padding: 15px 30px;
+        font-size: 16px;
+        border-radius: 50px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-btn.youtube {
+        background-color: #ff0000;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-btn.youtube::before {
+        content: '\25B6'; /* Unicode for play button icon */
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .cta-btn.youtube:hover {
+        background-color: #cc0000;
+        transform: scale(1.05);
+    }
+
+    .cta-btn.buy {
+        background-color: #4caf50;
+        color: white;
+        margin-left: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .cta-btn.buy::before {
+        content: '\1F6D2'; /* Unicode for shopping cart */
+        margin-right: 10px;
+        font-size: 18px;
+    }
+
+    .cta-btn.buy:hover {
+        background-color: #388e3c;
+        transform: scale(1.05);
+    }
+
+    /* Image styling */
+    .feature-img {
+        width: 100%;
+        border-radius: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .feature-img:hover {
+        transform: scale(1.02);
+    }
+    
